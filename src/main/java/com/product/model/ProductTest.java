@@ -10,7 +10,7 @@ public class ProductTest {
 
 		// 1. 新增
 //		ProductVO productVO1 = new ProductVO();
-//		productVO1.setProductCategoryId(1); // 假設分類編號 1 存在
+//		productVO1.setProductCategoryId(1); 
 //		productVO1.setProductName("無線滑鼠");
 //		productVO1.setProductPrice(499.0);
 //		productVO1.setProductDescription("人體工學設計，藍牙連線");
@@ -20,7 +20,7 @@ public class ProductTest {
 
 		// 2. 修改
 //		ProductVO productVO2 = new ProductVO();
-//		productVO2.setProductId(1001); // 假設要修改 product_id = 1001 的產品
+//		productVO2.setProductId(1); 
 //		productVO2.setProductCategoryId(2);
 //		productVO2.setProductName("無線鍵盤");
 //		productVO2.setProductPrice(699.0);
@@ -30,10 +30,10 @@ public class ProductTest {
 //		dao.update(productVO2);
 
 		// 3. 刪除
-//		dao.delete(1001); // 假設刪除 product_id = 1001 的資料
+//		dao.delete(2); // 假設刪除 product_id = 2 的資料
 
 		// 4. 查詢單筆
-		ProductVO productVO3 = dao.findByPK(2); // 假設查 product_id = 1001
+		ProductVO productVO3 = dao.findByPK(2); // 假設查 product_id = 2
 		if (productVO3 != null) {
 			System.out.print(productVO3.getProductId() + ", ");
 			System.out.print(productVO3.getProductCategoryId() + ", ");
